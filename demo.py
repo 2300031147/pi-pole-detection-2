@@ -62,7 +62,7 @@ def main():
             print("\nPress any key to close the visualization window...")
             cv2.waitKey(0)
             cv2.destroyAllWindows()
-        except:
+        except Exception:
             print("(Display not available in headless environment)")
     
     # Print summary

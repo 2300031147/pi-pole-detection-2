@@ -181,7 +181,7 @@ class GeometryDetector:
         # Get average Y position for each cluster
         cluster_y_positions = []
         for cluster in clusters:
-            avg_y = np.mean([[(line[1] + line[3]) / 2 for line in cluster]])
+            avg_y = np.mean([(line[1] + line[3]) / 2 for line in cluster])
             cluster_y_positions.append(avg_y)
         
         # Calculate spacing
